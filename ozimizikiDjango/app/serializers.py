@@ -5,15 +5,15 @@ from app.models import *
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'password', 'role']  # Убедитесь, что role добавлен
+        fields = ['id', 'username', 'password', 'role']  
 
     def create(self, validated_data):
-        # Роль теперь передается с фронтенда, никаких дефолтных значений
+        
         user = User.objects.create_user(
             username=validated_data['username'],
             password=validated_data['password'],
         )
-        user.role = validated_data['role']  # Устанавливаем роль из данных
+        user.role = validated_data['role'] 
         user.save()
         return user
 
