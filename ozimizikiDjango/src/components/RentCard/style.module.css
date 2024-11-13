@@ -1,0 +1,33 @@
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    margin: 20px 100px 20px 100px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    
+}
+.rentInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+    background: white;
+    
+    
+
+}
+.rentDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.rentDetailText{
+    color: grey;
+}

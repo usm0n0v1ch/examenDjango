@@ -1,0 +1,42 @@
+
+
+
+
+.card{
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 150px 20px 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius:12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.imgInfo{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+}
+.name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+

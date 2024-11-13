@@ -1,0 +1,42 @@
+.img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius:12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    border-radius:12px;
+    margin: 20px 100px 20px 100px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+.imgInfo{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+    
+}
+.name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}

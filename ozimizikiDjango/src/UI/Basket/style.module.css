@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #FF8C00;
+    padding: 10px;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
+
+}
+
+.container:hover{
+    background-color: #FF8C00;
+    color: white;
+    cursor: pointer;
+
+}

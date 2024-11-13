@@ -1,0 +1,82 @@
+
+
+.roomCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: white;
+    margin: 50px;
+    gap:100px
+}
+.roomTitle{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.roomInfo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.roomImg{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000022;
+    border-radius: 12px;
+}
+.roomDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: space-between;
+    
+    
+}
+.roomName{
+    font-size: 20px;
+    font-weight: bold;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+.dateContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+button{
+    border: none;
+    background: white;
+}

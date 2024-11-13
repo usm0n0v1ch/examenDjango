@@ -1,0 +1,23 @@
+
+.container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phoneIcon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+.phoneAndTime {
+    display: flex;
+    flex-direction: column;
+}
+.phone {
+    font-size: 20px;
+    font-weight: bold;
+}
+.time {
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+
+
+.container {
+  display: flex;
+  background: #000022;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+/* .contactHeader {
+  margin-left: 200px;
+}
+
+
+.regAndAuth {
+  margin-left: 500px;
+} */
