@@ -17,7 +17,7 @@ urlpatterns = router.urls + [
     path('login/', api_login, name='api_login'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     # Для получения access и refresh токенов
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Для обновления access токена
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  
     path('buildings/create/', BuildingCreateView.as_view(), name='building-create'),
     path('buildings/<int:pk>/update/', BuildingUpdateView.as_view(), name='building-update'),
     path('rents/create/', CreateRentView.as_view(), name='rent-create'),
