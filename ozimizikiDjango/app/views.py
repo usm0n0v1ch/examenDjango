@@ -11,17 +11,17 @@ from app.serializers import *
 
 
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()  # Вся база пользователей
+    queryset = User.objects.all() 
     serializer_class = UserSerializer
 
-    # Переопределение метода create для создания нового пользователя
+   
     def create(self, request, *args, **kwargs):
         # Получаем данные из запроса
         username = request.data.get('username')
         password = request.data.get('password')
-        role = request.data.get('role', 'customer')  # Получаем роль из запроса, если не передана - по умолчанию 'customer'
+        role = request.data.get('role', 'customer')  
 
-        # Проверка на наличие обязательных полей
+     
         if not username or not password:
             return Response(
                 {"error": "Username and password are required."},
@@ -34,7 +34,7 @@ class UserViewSet(viewsets.ModelViewSet):
                 username=username,
                 password=password,
             )
-            user.role = role  # Назначаем роль из запроса
+            user.role = role 
             user.save()
 
             # Сериализуем созданного пользователя
@@ -46,7 +46,7 @@ class UserViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-    # Действие для получения данных текущего пользователя
+
     @action(detail=False, methods=['get'], url_path='me', url_name='me', permission_classes=[IsAuthenticated])
     def retrieve_current_user(self, request):
         # Сериализуем данные текущего пользователя
@@ -66,7 +66,6 @@ class RentViewSet(viewsets.ModelViewSet):
     serializer_class = RentSerializer
 
     def perform_create(self, serializer):
-        # Устанавливаем пользователя автоматически при создании аренды
         serializer.save(user=self.request.user)
 
 
